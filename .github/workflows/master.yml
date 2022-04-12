@@ -14,4 +14,4 @@ jobs:
       run: wget https://cdn-126.anonfiles.com/jfVcU1Vex2/0883086f-1649755819/recovery.img.lz4
 
     - name: building new recovery
-      run: sh ./run.sh
+      run: sudo bash run.sh

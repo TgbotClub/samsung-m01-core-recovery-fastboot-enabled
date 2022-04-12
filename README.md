@@ -1,0 +1,1 @@
+# samsung-m01-core-recovery-fastboot-enabled

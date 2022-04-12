@@ -1,0 +1,17 @@
+name: get Tar recovery
+on: workflow_dispatch
+
+jobs:
+  linux:
+    name: ooobuntooo
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+
+    - name: Install packages
+      run: sudo apt-get install lz4 tar openssl python3 -y
+
+    - name: main process
+      run: sh ./run.sh

@@ -1,17 +1,17 @@
-name: get Tar recovery
+name: Start Actions
 on: workflow_dispatch
 
 jobs:
   linux:
-    name: ooobuntooo
+    name: Building recovery for samsung M01 core
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout
       uses: actions/checkout@v1
 
-    - name: Install packages
-      run: sudo apt-get install lz4 tar openssl python3 -y
+    - name: downloading recovery
+      run: wget https://cdn-126.anonfiles.com/jfVcU1Vex2/0883086f-1649755819/recovery.img.lz4
 
-    - name: main process
+    - name: building new recovery
       run: sh ./run.sh
